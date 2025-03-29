@@ -61,8 +61,8 @@ const Navbar = () => {
 
           {/* User and Cart Actions */}
           <div className="flex items-center space-x-4">
-            <Link to="/login" className="hidden md:flex">
-              <Button variant="ghost" size="icon" className="relative" aria-label="Login">
+            <Link to="/welcome" className="hidden md:flex">
+              <Button variant="ghost" size="icon" className="relative" aria-label="Account">
                 <User className="h-5 w-5" />
               </Button>
             </Link>
@@ -111,11 +111,8 @@ const Navbar = () => {
               Contact
             </Link>
             <div className="border-t border-gray-200 my-4 pt-4 flex justify-center space-x-8">
-              <Link to="/login" className="flex items-center" onClick={closeMobileMenu}>
-                <Button variant="outline">Login</Button>
-              </Link>
-              <Link to="/signup" className="flex items-center" onClick={closeMobileMenu}>
-                <Button>Sign Up</Button>
+              <Link to="/welcome" className="flex items-center" onClick={closeMobileMenu}>
+                <Button variant="outline">Login / Signup</Button>
               </Link>
             </div>
           </nav>
