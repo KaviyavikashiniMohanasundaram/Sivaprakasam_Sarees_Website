@@ -18,6 +18,10 @@ import Signup from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";
 import BulkPurchase from "./pages/BulkPurchase";
 import Welcome from "./pages/Welcome";
+import SellerWelcome from "./pages/SellerWelcome";
+import SellerLogin from "./pages/SellerLogin";
+import SellerSignup from "./pages/SellerSignup";
+import SellerDashboard from "./pages/SellerDashboard";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +46,13 @@ const App = () => (
             <Route path="/signup" element={<Signup />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/bulk-purchase" element={<BulkPurchase />} />
+            
+            {/* Seller Routes */}
+            <Route path="/seller" element={<SellerWelcome />} />
+            <Route path="/seller/login" element={<SellerLogin />} />
+            <Route path="/seller/signup" element={<SellerSignup />} />
+            <Route path="/seller/dashboard" element={<SellerDashboard />} />
+            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

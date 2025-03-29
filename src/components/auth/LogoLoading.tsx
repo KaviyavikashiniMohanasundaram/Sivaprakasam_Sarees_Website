@@ -11,7 +11,11 @@ const LogoLoading = () => {
         </div>
       </div>
       <h1 className="text-2xl font-playfair font-bold text-saree-700 mb-2">Sivaprakasam Sarees</h1>
-      <p className="text-sm text-gray-500">Connecting Tradition & Elegance Seamlessly</p>
+      <p className="text-sm text-gray-500 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+        {window.location.pathname.includes('seller') 
+          ? 'Grow Your Business Online' 
+          : 'Connecting Tradition & Elegance Seamlessly'}
+      </p>
     </div>
   );
 };
